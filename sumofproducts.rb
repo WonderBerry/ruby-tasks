@@ -15,13 +15,10 @@ while true do
   prt_name = gets.chomp.to_s
   if prt_name == "quit" then break
   end
-  
   puts "Unit price for #{prt_name}: "
   unit_price = gets.chomp.to_f
-  
   puts "Quantity: "
   amount_purchased = gets.chomp.to_f
-
   product_data[prt_name] = {unit_price => amount_purchased}
 end
 
