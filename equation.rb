@@ -14,7 +14,7 @@ b = gets.chomp.to_i
 puts "Enter c:"
 c = gets.chomp.to_i
 
-while a != 0 do
+unless a == 0 
 	d = b**2 - 4*a*c
   if d < 0 
     puts "Dicriminant: #{d}, no roots"
