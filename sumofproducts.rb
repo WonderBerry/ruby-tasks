@@ -9,13 +9,16 @@
 
 product_data = {}
 total_price = 0
+
 while true do
   puts "Name product: (enter 'quit' to exit)"
   prt_name = gets.chomp.to_s
   if prt_name == "quit" then break
   end
+  
   puts "Unit price for #{prt_name}: "
   unit_price = gets.chomp.to_f
+  
   puts "Quantity: "
   amount_purchased = gets.chomp.to_f
 
@@ -25,9 +28,7 @@ end
 puts product_data
 
 for i in product_data.keys do
-
   puts "Total price for #{i}: #{product_data[i].keys[0]*product_data[i].values[0]}"
-
   total_price += product_data[i].keys[0]*product_data[i].values[0]
 end
 
