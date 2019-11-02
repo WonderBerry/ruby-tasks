@@ -14,10 +14,6 @@ b = gets.chomp.to_i
 puts "Enter c:"
 c = gets.chomp.to_i
 
-d = b**2 - 4*a*c
-
-
-
 while a != 0 do
 	d = b**2 - 4*a*c
   if d < 0 
