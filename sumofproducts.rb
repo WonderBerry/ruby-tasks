@@ -25,9 +25,10 @@ end
 puts product_data
 
 for i in product_data.keys do
-  puts "Total price for #{i}: #{product_data[i].keys[0]*product_data[i].values[0]}"
-  total_price += product_data[i].keys[0]*product_data[i].values[0]
+  total_price_unit = product_data[i].keys[0]*product_data[i].values[0] 
+  puts "Total price for #{i}: #{total_price_unit}"
+  total_price += total_price_unit
 end
 
 
-puts "Total price of all products: #{total_price}"
+puts "Total price: #{total_price}"
