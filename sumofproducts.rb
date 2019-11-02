@@ -30,5 +30,4 @@ for i in product_data.keys do
   total_price += total_price_unit
 end
 
-
 puts "Total price: #{total_price}"
