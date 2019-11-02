@@ -14,18 +14,17 @@ b = gets.chomp.to_i
 puts "Enter c:"
 c = gets.chomp.to_i
 
-unless a == 0 
+unless a == 0
 	d = b**2 - 4*a*c
-  if d < 0 
-    puts "Dicriminant: #{d}, no roots"
-  elsif d == 0
-    x = -b/2*a
-    puts "Dicriminant: #{d}, x:#{x}"
-  else
-	d_root = Math.sqrt(d)
-    x1 = -b+d_root/2*a
-    x2 = -b-d_root/2*a
-    puts "Dicriminant: #{d}, x1:#{x1}, x2:#{x2}"
-  end
+	if d < 0 
+		puts "Dicriminant: #{d}, no roots"
+	elsif d == 0
+		x = -b/2*a
+		puts "Dicriminant: #{d}, x:#{x}"
+	else
+		d_root = Math.sqrt(d)
+		x1 = -b+d_root/2*a
+		x2 = -b-d_root/2*a
+		puts "Dicriminant: #{d}, x1:#{x1}, x2:#{x2}"
+	end
 end
-
